@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:ns="http://www.tibco.com/schemas/practice0/xml tools/Schema.xsd" xmlns:tns="http://xmlns.example.com/1573477892405" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xmlns.example.com/1573477892405">
+    <import namespace="http://www.tibco.com/schemas/practice0/xml tools/Schema.xsd" location="../xml tools/bookdetails.xsd"/>
+    <message name="bookrequest">
+        <part name="part1" element="ns:bookrequest"/>
+    </message>
+    <message name="bookresponse">
+        <part name="part1" element="ns:bookresponse"/>
+    </message>
+    <portType name="PortType">
+        <operation name="Operation">
+            <input message="tns:bookrequest"/>
+            <output message="tns:bookresponse"/>
+        </operation>
+    </portType>
+</definitions>
